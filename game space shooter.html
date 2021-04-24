@@ -126,13 +126,21 @@
             var playerTop = player.offsetTop;
 
             document.addEventListener("keydown", function(event){
+                var width = document.body.offsetWidth;
+                var playerWidth = player.offsetWidth;
                 if(event.keyCode == 39)
                 {
-                    playerLeft+=27;
+                    if(playerLeft < width - playerWidth - 7)
+                    {
+                        playerLeft+=27;
+                    }
                 }
                 else if(event.keyCode == 37)
                 {
-                    playerLeft-=27;
+                    if(playerLeft > 0)
+                    {
+                        playerLeft-=27;
+                    }
                 }
 
                 player.style.top = playerTop + "px";
