@@ -1,0 +1,100 @@
+body
+            {
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                background-image: url("background-space.gif");
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+            html, body
+            {
+                height: 97%;
+            }
+
+            .container
+            {
+                display: flex;
+                width: 100px;
+                height: 100%;
+            }
+
+            .header
+            {
+                display: flex;
+                flex-direction: row;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+            }
+
+            .life
+            {
+                display: flex;
+                font-size: 70px;
+                color: rgb(189, 252, 231);
+                text-transform: uppercase;
+                padding-top: 0;
+                width: 50%;
+            }
+
+            .score
+            {
+                display: flex;
+                font-size: 70px;
+                color: rgb(189, 252, 231);
+                text-transform: uppercase;
+                padding-top: 0;
+                width: 50%;
+                justify-content: flex-end;
+            }
+
+            .player
+            {
+                display: flex;
+                position: absolute;
+                top: 80%;
+                left: 40%;
+                background-image: url("player.png");
+                width: 240px;
+                height: 190px;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center center;
+
+            }
+
+            .bullet
+            {
+                display: flex;
+                position: absolute;
+                background-image: url("bullet.png");
+                width: 130px;
+                height: 100px;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center center;
+ 
+            }
+
+            .boom
+            {
+                display: flex;
+                position: absolute;
+                background-image: url("boom.png");
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center center;
+            }
+
+            .enemy
+            {
+                display: flex;
+                position: absolute;
+                background-image: url("enemy.png");
+                width: 37px;
+                height: 200px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center center;
+            }
